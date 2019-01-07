@@ -1,5 +1,7 @@
 # mangarock-ded
 
+Mangarock got reversed enginerred
+
 Tool used:
 
 - CFR
@@ -107,3 +109,7 @@ md5(md5(md5(url)+"mr")+"nabvn")
 
 - Endpoint `http://mr2.mangarockhd.com/queryv2/mrquery4012world.php`
 - No signing required
+
+# Want your app got DED?
+
+Contact me and we can have a talk.
