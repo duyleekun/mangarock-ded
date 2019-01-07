@@ -1,7 +1,17 @@
 # mangarock-ded
 
+Tool used:
+
+- CFR
+- Xposed
+- MITM
+- Frida
 
 ## android 3.75 (2019-01-04)
+
+They changed their hashing algorithm to XXhash (fast and secure hashing algorithm) and the secret in the hash was generated from a single function, I didn't even bother to read the code.
+
+CloudFlare blocked my crawling server for the first time
 
 - Endpoint `https://api.mangarockhd.com/query/android375/`
 
@@ -21,6 +31,8 @@
 ```
 
 ## android 3.63 (2018-10-18)
+
+This time they start to verify QToken
 
 - Endpoint `https://api.mangarockhd.com/query/android312/`
 
@@ -59,6 +71,8 @@ md5(md5(md5(url)+"mr")+"nabvn")
 ```
 
 ## ios 3.83 (2017-05-08)
+
+They introduced ReactNative code inside their binary and leak the Token generator in the JS code. Their server didn't validate the `QToken` at that time.
 
 - Endpoint `https://api.mangarockhd.com/query/ios383/`
 
