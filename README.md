@@ -9,6 +9,27 @@ Tool used:
 - MITM
 - Frida
 
+## android 4.02 (2020-03-06)
+
+They hashing algorithm is still XXhash just some change in their salt which is provided below.
+
+- Endpoint `https://api.mangarockhd.com/query/android402/`
+
+- Headers
+
+```
+{
+  'qtoken': token(url),
+  'Device': 'zAMFdi5nFx',
+}
+```
+
+- Token
+
+```ruby
+'4'+XXhash.xxh64("#{url}:425bd0ffd40bfaefbd184ea34e85d5042c8e74716f6e9f770cefbadba395782b",0).to_s(16)
+```
+
 ## android 3.75 (2019-01-04)
 
 They changed their hashing algorithm to XXhash (fast and secure hashing algorithm) and the secret in the hash was generated from a single function, I didn't even bother to read the code.
